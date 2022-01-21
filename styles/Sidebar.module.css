@@ -1,0 +1,8 @@
+.sidebarItem:hover {
+  transition: 0.5s;
+  background-color: rgba(68,44,46,0.2);
+}
+
+.activeItem{
+  background-color: #442C2E;
+}
