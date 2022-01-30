@@ -15,6 +15,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountDetails from "./AccountDetails";
+import zIndex from "@mui/material/styles/zIndex";
 
 
 interface Props {
@@ -34,16 +35,21 @@ export default function Sidebar(props: Props) {
           width: "15vw",
           height: "100vh",
           marginLeft: "-2px",
+          minWidth: '218px',
+          overflow: 'hidden',
+          position: 'fixed',
         },
       }}
     >
       <Paper
-        elevation={3}
+        elevation={24}
         sx={{
           display: "flex",
           flexDirection: "column",
           backgroundColor: "secondary.main",
           alignItems: "center",
+          position: 'relative',
+          zIndex: 9999,
         }}
       >
         <div className="sidebar-contents" style={{ marginLeft: "2px", display: 'flex', flexDirection: 'column', height: '100%', width: "100%" }}>
